@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+    <item
+        android:id="@+id/search_item"
+        android:title="@string/navigation_item_1" />
+    <item
+        android:id="@+id/sort_item"
+        android:title="@string/navigation_item_2" />
+    <item
+        android:id="@+id/liner_item"
+        android:title="@string/navigation_item_3" />
+    <item
+        android:id="@+id/non_liner_item"
+        android:title="@string/navigation_item_4" />
+</menu>

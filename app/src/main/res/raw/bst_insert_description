@@ -1,0 +1,34 @@
+
+About Algorithm:-
+
+Insert function is used to add a new element in a binary search tree at appropriate location. Insert function is to be designed in such a way that, it must node violate the property of binary search tree at each value.
+
+Allocate the memory for tree.
+Set the data part to the value and set the left and right pointer of tree, point to NULL.
+If the item to be inserted, will be the first element of the tree, then the left and right of this node will point to NULL.
+Else, check if the item is less than the root element of the tree, if this is true, then recursively perform this operation with the left of the root.
+If this is false, then perform this operation recursively with the right sub-tree of the root.
+
+========================================
+
+The worst case time complexity of inserting in binary search tree is of O(n)
+
+========================================
+
+Algorithm:-
+
+Insert (TREE, ITEM)
+Step 1: IF TREE = NULL
+    Allocate memory for TREE
+   SET TREE -> DATA = ITEM
+  SET TREE -> LEFT = TREE -> RIGHT = NULL
+  ELSE
+   IF ITEM < TREE -> DATA
+    Insert(TREE -> LEFT, ITEM)
+  ELSE
+   Insert(TREE -> RIGHT, ITEM)
+  [END OF IF]
+  [END OF IF]
+Step 2: END
+
+========================================

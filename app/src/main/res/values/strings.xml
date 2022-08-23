@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AlgoVise</string>
+    <string name="algo_name">Algorithm Name</string>
+    <string name="title_menu">Menu</string>
+    <string name="navigation_item_1">Search</string>
+    <string name="navigation_item_2">Sort</string>
+    <string name="navigation_item_3">Linear</string>
+    <string name="navigation_item_4">Non-Linear</string>
+    <string name="algo_param_hint">Enter Data Here</string>
+
+    <string name="title_home">Visualise</string>
+    <string name="title_dashboard">Description</string>
+    <string name="title_notifications">Code</string>
+
+    <!--to toggle the open close button
+    of the navigation drawer-->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+</resources>

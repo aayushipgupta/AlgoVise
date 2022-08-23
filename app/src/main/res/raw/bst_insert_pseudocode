@@ -1,0 +1,19 @@
+The Insert operation in a binary search tree
+Again, the idea is to make use of the ordering property of BST's; each key comparison tells you which subtree the key must go in, so the find algorithm can find it later
+But (unlike finds) inserts modify the tree. It is important to maintain the BST invariants: If you start with a BST, the result after insertion must still be a BST!
+
+Pseudocode for the basic iterative algorithm to Insert key with value k in a BST:
+
+1. If tree is empty (no root), create a node holding key k as root; done.
+
+2. Set CurrNode = RootNode.
+
+3. If k == CurrNode.key, done. /* No duplicate keys in a BST. */
+
+4. If k< CurrNode.key ... /* key must go in left subtree */
+If CurrNode.left == NULL, create a node holding k as left child of CurrNode; done.
+else set CurrNode = CurrNode.left, and go to 3.
+
+5. else ... /* key must go in right subtree */
+If CurrNode.right == NULL, create a node holding k as left child of CurrNode; done.
+else set CurrNode = CurrNode.right, and go to 3.

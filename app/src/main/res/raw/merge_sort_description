@@ -1,0 +1,31 @@
+
+About Algorithm:-
+
+Merge sort is a divide and conquer algorithm.
+It divides the array repeatedly into smaller subarrays
+until each subarray contains a single element and merges back these subarrays
+in such a manner that results in a sorted array.
+
+========================================
+
+Merge Sort is an efficient, stable sorting algorithm with an average, best-case, and worst-case time complexity of O(n * log (n) ).
+
+========================================
+
+Algorithm:-
+
+The simple steps of achieving the merge sort are listed as follows -
+
+mergeSort(arr, size)
+If  size > 1
+Step 1: Find the size of the leftSubArray and rightSubArray so that we can divide the array into two-part
+leftSize = size / 2;
+rightSize = size - leftSize;
+Step 2: Call the mergesort for the leftSubArray
+mergeSort(leftSubArray, leftSize);
+Step 3: Call the mergesort for the rightSubArray
+mergeSort(rightSubArray, rightSize);
+Step 4: Call the merge function to merge these two halves
+mergeTwoSortedArray(leftSubArray, rightSubArray, arr, leftSize, rightSize)
+
+========================================

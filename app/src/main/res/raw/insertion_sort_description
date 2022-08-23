@@ -1,0 +1,35 @@
+
+About Algorithm:-
+
+Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands.
+The array is virtually split into a sorted and an unsorted part.
+Values from the unsorted part are picked and placed at the correct position in the sorted part.
+
+Characteristics of Insertion Sort:
+This algorithm is one of the simplest algorithm with simple implementation
+Basically, Insertion sort is efficient for small data values
+Insertion sort is adaptive in nature, i.e. it is appropriate for data sets which are already partially sorted.
+
+========================================
+
+The average case time complexity of Insertion sort is O(n^2).
+
+========================================
+
+Algorithm:-
+
+The simple steps of achieving the insertion sort are listed as follows -
+
+Step 1 - If the element is the first element, assume that it is already sorted. Return 1.
+
+Step 2 - Pick the next element, and store it separately in a key.
+
+Step 3 - Now, compare the key with all elements in the sorted array.
+
+Step 4 - If the element in the sorted array is smaller than the current element, then move to the next element. Else, shift greater elements in the array towards the right.
+
+Step 5 - Insert the value.
+
+Step 6 - Repeat until the array is sorted.
+
+========================================

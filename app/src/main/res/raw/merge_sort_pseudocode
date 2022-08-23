@@ -1,0 +1,13 @@
+procedure mergesort( var a as array )
+
+   if ( n == 1 ) return a
+
+   var l1 as array = a[0] ... a[n/2]
+   var l2 as array = a[n/2+1] ... a[n]
+
+   l1 = mergesort( l1 )
+   l2 = mergesort( l2 )
+
+   return merge( l1, l2 )
+
+end procedure

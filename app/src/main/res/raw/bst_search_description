@@ -1,0 +1,36 @@
+
+About BST:-
+
+A binary search tree (BST) is a binary tree where each node has a Comparable key (and an associated value) and satisfies the restriction that the key in any node is larger than the keys in all nodes in that node's left subtree and smaller than the keys in all nodes in that node's right subtree.
+
+About Search:
+A recursive algorithm to search for a key in a BST follows immediately from the recursive structure:
+If the tree is empty, we have a search miss; if the search key is equal to the key at the root,we have a search hit.
+Otherwise, we search (recursively) in the appropriate subtree.
+The recursive get() method implements this algorithm directly.
+It takes a node (root of a subtree) as first argument and a key as second argument, starting with the root of the tree and the search key.
+
+Advantages of Binary search tree
+Searching an element in the Binary search tree is easy as we always have a hint that which subtree has the desired element.
+As compared to array and linked lists, insertion and deletion operations are faster in BST.
+
+========================================
+
+The worst case time complexity of searching in binary search tree is of O(n)
+
+========================================
+
+Algorithm:-
+
+Algorithm to search an element in Binary search tree
+Search (root, item)
+Step 1 - if (item = root → data) or (root = NULL)
+return root
+else if (item < root → data)
+return Search(root → left, item)
+else
+return Search(root → right, item)
+END if
+Step 2 - END
+
+========================================

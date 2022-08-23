@@ -1,0 +1,12 @@
+Node search(int x, Node n)
+{
+    if(n != null)
+    {
+        if(n.data  == x)
+                return (n)
+        else if(n.data > x)
+                search(x, n.left)
+        else
+                search(x, n.right)
+    }
+}

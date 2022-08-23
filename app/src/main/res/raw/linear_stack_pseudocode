@@ -1,0 +1,20 @@
+
+
+void push(int data) {
+   if(!isFull()) {
+      top = top + 1;
+      stack[top] = data;
+   } else {
+      printf("Could not insert data, Stack is full.\n");
+   }
+}
+
+int pop(int data) {
+   if(!isempty()) {
+      data = stack[top];
+      top = top - 1;
+      return data;
+   } else {
+      printf("Could not retrieve data, Stack is empty.\n");
+   }
+}
